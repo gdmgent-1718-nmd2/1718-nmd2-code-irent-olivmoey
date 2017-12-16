@@ -1,3 +1,111 @@
 @import
   "bootstrap-variables",                  // See _bootstrap-variables.scss
   "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$colorprimary: #00C66B;
+$colorsecondary: #586C7E; 
+
+body {
+  font-family: 'Roboto' , sans-serif;
+}
+
+.navbar {
+  background-color: $colorprimary;
+}
+
+h1 {
+  color: $colorsecondary;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+
+.btn-primary {
+  background-color: $colorprimary;
+  color: white;
+  border-color: $colorprimary;
+  border-radius: 0px;
+  border-width: 2px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn-primary span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-primary span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: $colorprimary;
+  border-color: $colorprimary;
+}
+
+.btn-primary:hover span {
+  padding-right: 25px;
+}
+
+.btn-primary:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.form-control {
+  border-radius: 0px;
+  border-width: 2px;
+  border-color: $colorsecondary;
+}
+
+
+/*
+===========
+Mobile css
+===========
+*/
+
+@media screen and (max-width: 576px) {
+  h1 {
+      font-size: 26px;
+      margin: 35px 0 30px 0;
+  }
+  h2 {
+      font-size: 18px;
+      
+  }
+}
+
+
+
+
+/*
+===========
+Desktop tablet css
+===========
+*/
+
+@media screen and (min-width: 576px) {
+  h1 {
+      font-size: 40px;
+      margin: 45px 0 40px 0;
+      
+  }
+  h2 {
+      font-size: 20px;
+  }
+}
