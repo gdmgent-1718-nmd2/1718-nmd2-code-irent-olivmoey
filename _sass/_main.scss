@@ -2,19 +2,18 @@
   "bootstrap-variables",                  // See _bootstrap-variables.scss
   "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 $colorprimary: #00C66B;
 $colorsecondary: #586C7E; 
 
 body {
-  font-family: 'Roboto' , sans-serif;
+  font-family: 'Lato' , sans-serif;
 }
 
 .navbar {
   background-color: $colorprimary;
 }
-
 h1 {
   color: $colorsecondary;
   font-weight: bold;
@@ -22,9 +21,33 @@ h1 {
 
 h2 {
   font-weight: bold;
+  margin: 0 0 20px 0;
+  color: $colorprimary;
+}
+
+.small-attention {
+  font-size: 12px;
+  margin-top: 15px; 
+  font-style: italic;
 }
 
 
+/* text on image */
+.top-left {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  padding: 5px;
+  background-color: $colorprimary;
+}
+.container-imgtext {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+/* button */
 .btn-primary {
   background-color: $colorprimary;
   color: white;
@@ -34,14 +57,12 @@ h2 {
   transition: all 0.5s;
   cursor: pointer;
 }
-
 .btn-primary span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-
 .btn-primary span:after {
   content: '\00bb';
   position: absolute;
@@ -50,26 +71,24 @@ h2 {
   right: -20px;
   transition: 0.5s;
 }
-
 .btn-primary:hover {
   color: white;
   background-color: $colorprimary;
   border-color: $colorprimary;
 }
-
 .btn-primary:hover span {
   padding-right: 25px;
 }
-
 .btn-primary:hover span:after {
   opacity: 1;
   right: 0;
 }
 
+/* form */
 .form-control {
   border-radius: 0px;
   border-width: 2px;
-  border-color: $colorsecondary;
+  border-color: $colorprimary;
 }
 
 
@@ -87,6 +106,9 @@ Mobile css
   h2 {
       font-size: 18px;
       
+  }
+  .prijs {
+    font-size: 25px;
   }
 }
 
@@ -107,5 +129,8 @@ Desktop tablet css
   }
   h2 {
       font-size: 20px;
+  }
+  .prijs {
+    font-size: 40px;
   }
 }
