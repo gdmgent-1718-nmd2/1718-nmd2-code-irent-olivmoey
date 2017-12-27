@@ -16,11 +16,7 @@ body {
 .navbar {
   background-color: $colorprimary;
 }
-footer {
-  background-color: $colorsecondary;
-  padding: 20px 0 20px 0;
-  color: white;
-}
+
 
 
 
@@ -43,6 +39,49 @@ h3 {
   font-style: italic;
   color: $colorsmalltext;
 }
+
+
+/* footer */
+footer {
+  background-color: $colorsecondary;
+  padding: 20px 0 20px 0;
+  color: white;
+}
+footer li {
+  margin-bottom: 5px;
+}
+.footer-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+.footer-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  color: white;
+  background: $colorprimary;
+  transition: width .3s;
+  text-decoration: none;
+}
+.footer-link:hover::after {
+  color: white;
+  width: 100%;
+  //transition: width .3s;
+}
+.footer-link:visited {
+  color: white;
+  text-decoration: none;
+}
+.footer-link:active {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: none;
+}
+
 
 
 /* text on image */
@@ -77,7 +116,7 @@ h3 {
   transition: 0.5s;
 }
 .btn-primary span:after {
-  content: '\00bb';
+  content: '\276F';
   position: absolute;
   opacity: 0;
   top: 0;
