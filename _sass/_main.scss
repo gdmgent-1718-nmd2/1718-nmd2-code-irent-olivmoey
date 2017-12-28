@@ -35,13 +35,34 @@ hr {
 }
 .navbar-brand {
   font-family: 'Cousine', monospace;
-  font-weight: bold;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-nav {
+  .nav-link {
+    color: white;
+  }
+  &.active-hover,
+  :hover,
+  :visited {
+    color: white;
+    font-weight: 0;
+  }
 }
 
+
+
+.column-flex-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 .jumbotron {
   border-radius: 0px;
 }
+
 
 
 
@@ -85,6 +106,7 @@ hr {
   
 
 
+
 /* typo */
 h1 {
   color: $colorsecondary;
@@ -92,7 +114,6 @@ h1 {
 }
 h2 {
   font-weight: bold;
-  margin: 0 0 20px 0;
   color: black;
 }
 h3 {
@@ -105,6 +126,14 @@ h3 {
   color: $colorsmalltext;
   margin-top: -20px;
 }
+.titel-prijs {
+  font-weight: bold;
+  font-size: 20px;
+}
+.thanks-text {
+  color: $colorprimary;
+}
+
 
 
 
@@ -119,6 +148,7 @@ footer {
 footer li {
   margin-bottom: 5px;
 }
+
 
 
 
@@ -160,10 +190,19 @@ footer a:visited {
   color: white;
   text-decoration: none;
 }
-a.active-hover {
+a.active {
   color: white;
   border-bottom: 2px solid white;
 }
+nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 
 
 
@@ -182,9 +221,6 @@ a.active-hover {
   color: white;
 }
 
-.no-margintop {
-  margin-top: 0px;
-}
 
 
 
@@ -230,6 +266,7 @@ a.active-hover {
 
 
 
+
 /* form */
 .form-control {
   border-radius: 0px;
@@ -239,6 +276,11 @@ a.active-hover {
 
 
 
+
+
+.margin-image {
+  margin-bottom: 20px;
+}
 
 
 /*
@@ -260,13 +302,23 @@ Mobile css
   }
   h2 {
       font-size: 20px;
-      margin-top: 25px;
   }
   h3 {
     font-size: 18px;
   }
   .prijs {
     font-size: 25px;
+  }
+  .column-flex-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .margintop {
+    margin-top: 20px;
+  }
+  .thanks-text {
+    font-size: 30px;
   }
 }
 
@@ -290,7 +342,7 @@ Desktop tablet css
   }
   h2 {
       font-size: 22px;
-      margin-top: 35px;
+      margin-top: 0px;
   }
   h3 {
     font-size: 20px;
@@ -300,5 +352,8 @@ Desktop tablet css
   }
   .breadcrumb {
     margin: 70px 0;
+  }
+  .thanks-text {
+    font-size: 40px;
   }
 }
