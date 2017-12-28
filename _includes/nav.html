@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <!-- websitelogo -->
     <a class="navbar-brand" href="{{'index/'|relative_url}}">iWOLF</a>
-    
+
     <!-- hamburger icoon -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -9,7 +9,7 @@
   
     <!-- hoofdnavigatie -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav">
           {% assign links = site.data.navigation %}
           {% for link in links %}
               {% assign class = nil %}
@@ -33,6 +33,11 @@
                   </li>
               {% endif %}
           {% endfor %}
+                  <li "nav-item">
+                      <a class="nav-link shoppingbag" href="{{'winkelmand/'|relative_url}}">
+                            <img  src="{{'assets/images/shoppingbag.png'|relative_url}}" alt="winkelmand" width="20px">
+                      </a>
+                  </li>
       </ul>
     </div>
   </nav>

@@ -14,22 +14,20 @@ $colorsmalltext: #8C9AA8;
 
 
 
-
 body {
   font-family: 'Lato' , sans-serif;
   color: $colorbodytext;
   font-size: 16px;
 }
-
-
-
-
-
 hr {
   border: 1px solid $colorprimary;
   margin: 30px 0;
 }
 
+
+
+
+/* navbar */
 .navbar {
   background-color: $colorprimary;
 }
@@ -50,17 +48,32 @@ hr {
     font-weight: 0;
   }
 }
+.shoppingbag {
+  padding-top: 5px;
+}
 
 
 
+
+/* winkelmand */
 .column-flex-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
+
+
+
+/* jumbotron */
 .jumbotron {
   border-radius: 0px;
+  margin: 0;
+  padding: 20px;
+}
+.header-text {
+  color: $colorprimary;
+  margin-bottom: 5px;
 }
 
 
@@ -277,7 +290,9 @@ nav a:visited {
 
 
 
-
+.end-page {
+  margin-bottom: 50px;
+}
 .margin-image {
   margin-bottom: 20px;
 }
@@ -293,6 +308,9 @@ Mobile css
   h1 {
       font-size: 26px;
       margin: 35px 0 30px 0;
+  }
+  .header-text {
+    font-size: 25px;
   }
   .jumbotron {
     margin: 0 0 30px 0;
@@ -323,6 +341,7 @@ Mobile css
   .breadcrumb-item {
     font-size: 14px;
   }
+
 }
 
 
@@ -341,7 +360,7 @@ Desktop tablet css
       margin: 45px 0 40px 0;   
   }
   .jumbotron {
-    margin: 45px 0 40px 0;
+    margin: 0px 0 40px 0;
   }
   h2 {
       font-size: 22px;
@@ -359,4 +378,5 @@ Desktop tablet css
   .thanks-text {
     font-size: 40px;
   }
+  
 }

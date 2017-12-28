@@ -1,10 +1,8 @@
 - title: Home
-  url: /index
+  url: index/
 - title: Gray
   url: /gray
 - title: Contact
   url: /contact
 - title: FAQ
   url: /faq
-- title: Winkelmand
-  url: /winkelmand
