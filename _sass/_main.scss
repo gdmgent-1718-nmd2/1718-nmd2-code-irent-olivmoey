@@ -4,19 +4,47 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+
+/* colors */
 $colorprimary: #00C66B;
 $colorsecondary: #586C7E; 
 $colorbodytext: #4C5457;
 $colorsmalltext: #8C9AA8;
 
+
+
+
+
 body {
   font-family: 'Lato' , sans-serif;
   color: $colorbodytext;
+  font-size: 16px;
 }
+
+
+
 .navbar {
   background-color: $colorprimary;
 }
 
+
+.jumbotron {
+  border-radius: 0px;
+}
+
+.breadcrumb {
+  margin: 70px 0;
+  border-radius: 0px;
+  background-color: $colorprimary;
+  justify-content: center;
+}
+.breadcrumb-item {
+  color: white;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
 
 
 
@@ -38,7 +66,9 @@ h3 {
   margin-top: 15px; 
   font-style: italic;
   color: $colorsmalltext;
+  margin-top: -20px;
 }
+
 
 
 /* footer */
@@ -46,41 +76,51 @@ footer {
   background-color: $colorsecondary;
   padding: 20px 0 20px 0;
   color: white;
+  font-size: 16px;
 }
 footer li {
   margin-bottom: 5px;
+
+
+/* hover links */  
 }
-.footer-link {
+.hover-link {
   display: inline-block;
   color: white;
   text-decoration: none;
 }
-.footer-link::after {
+.hover-link::after {
   content: '';
   display: block;
   width: 0;
   height: 2px;
   color: white;
-  background: $colorprimary;
+  background: white;
   transition: width .3s;
   text-decoration: none;
 }
-.footer-link:hover::after {
+.hover-link:hover::after {
   color: white;
   width: 100%;
   //transition: width .3s;
 }
-.footer-link:visited {
-  color: white;
-  text-decoration: none;
-}
-.footer-link:active {
-  color: white;
-  text-decoration: none;
-}
 footer a:hover {
+  color: white;
   text-decoration: none;
 }
+footer a:visited {
+  color: white;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  color: white;
+  text-decoration: none;
+}
+.breadcrumb a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 
 
 
@@ -99,6 +139,7 @@ footer a:hover {
 }
 
 
+
 /* button */
 .btn-primary {
   background-color: $colorprimary;
@@ -106,6 +147,7 @@ footer a:hover {
   border-color: $colorprimary;
   border-radius: 0px;
   border-width: 2px;
+  margin: 20px 0 30px;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -136,6 +178,8 @@ footer a:hover {
   right: 0;
 }
 
+
+
 /* form */
 .form-control {
   border-radius: 0px;
@@ -155,8 +199,12 @@ Mobile css
       font-size: 26px;
       margin: 35px 0 30px 0;
   }
+  .no-margin {
+    margin-top: 0px;
+  }
   h2 {
       font-size: 20px;
+      margin-top: 25px;
   }
   h3 {
     font-size: 18px;
