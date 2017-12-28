@@ -40,19 +40,36 @@ body {
 }
 .breadcrumb-item {
   color: white;
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+  margin-bottom: $breadcrumb-margin-bottom;
+  list-style: none;
 }
-
-
+  
 .breadcrumb-item {
   + .breadcrumb-item::before {
-    color: white;
-    content: '\276F';
+      display: inline-block; 
+      padding-right: $breadcrumb-item-padding;
+      padding-left: $breadcrumb-item-padding;
+      color: white;
+  content: '\276F';
   }
+
+  + .breadcrumb-item:hover::before {
+      text-decoration: underline;
+  }
+
+  + .breadcrumb-item:hover::before {
+      text-decoration: none;
+  }
+  
   &.active-hover {
-    border-bottom: 2px solid white;
-    color:white;
+      color: white;
   }
 }
+  
 
 
 
