@@ -14,7 +14,7 @@
           {% for link in links %}
               {% assign class = nil %}
               {% if link.url contains page.url %}
-                  {% assign class = ' active-hover' %}
+                  {% assign class = ' active' %}
               {% endif %}
               {% if link.sublinks %}
                   <li class="nav-item dropdown {{ class }}">
