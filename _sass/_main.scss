@@ -42,9 +42,15 @@ body {
   color: white;
 }
 
-.active {
+.active-hover {
   border-bottom: 2px solid white;
+  color: white;
 }
+.breadcrumb-item {
+  + .breadcrumb-item::before {
+    color: white;
+    content: '\276F';
+  }
 
 
 
